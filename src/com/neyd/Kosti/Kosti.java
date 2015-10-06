@@ -10,7 +10,6 @@ public class Kosti {
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
-        String resp = null;
         String resp2 = null;
         String gamer1 = null;
         String gamer2 = null;
