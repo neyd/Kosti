@@ -11,14 +11,14 @@ public class Kosti {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         String resp = null;
-        String resp2 = "1";
+        String resp2 = null;
         String gamer1 = null;
         String gamer2 = null;
         System.out.println("Введіть ім'я гравця 1");
         gamer1 = scanner.nextLine();
         System.out.println("Введіть ім'я гравця 2");
         gamer2 = scanner.nextLine();
-        while (resp2.equals("1")) {
+        while (true) {
             System.out.println("Кидає " + gamer1);
             scanner.nextLine();
             int kub1 = random.nextInt(6) + 1;
@@ -38,7 +38,7 @@ public class Kosti {
             } else {
                 System.out.println("Переможець " + gamer2);
             }
-            System.out.println("Якщо хочете зупинитися 2");
+            System.out.println("Якщо хочете зупинитися 2,");
             resp2 = scanner.nextLine();
             if (resp2.equals("2")){
                 break;
