@@ -1,6 +1,8 @@
 package com.neyd.Kosti;
+
 import java.util.Scanner;
 import java.util.Random;
+
 /**
  * Created by Женя on 06.10.2015.
  */
@@ -19,13 +21,11 @@ public class Kosti {
             System.out.println("Кидає гравець 2");
             resp = scanner.nextLine();
             int kub3 = random.nextInt(6) + 1;
-            ;
             int kub4 = random.nextInt(6) + 1;
             System.out.println(kub3 + "     " + kub4 + "     " + (kub3 + kub4));
             if (kub1 + kub2 > kub3 + kub4) {
                 System.out.println("Переможець гравець 1");
-            }
-             else if (kub1 + kub2 == kub3 + kub4) {
+            } else if (kub1 + kub2 == kub3 + kub4) {
                 System.out.println("Нічия");
             } else {
                 System.out.println("Переможець гравець 2");
