@@ -24,13 +24,15 @@ public class Kosti {
             System.out.println(kub3 + "     " + kub4 + "     " + (kub3 + kub4));
             if (kub1 + kub2 > kub3 + kub4) {
                 System.out.println("Переможець гравець 1");
-            } else if (kub1 + kub2 == kub3 + kub4) {
+            }
+             else if (kub1 + kub2 == kub3 + kub4) {
                 System.out.println("Нічия");
             } else {
                 System.out.println("Переможець гравець 2");
             }
             System.out.println("Якщо хочете зупинитися 2");
             resp2 = Integer.parseInt(scanner.nextLine());
+            //push me
         }
     }
 }
