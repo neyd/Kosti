@@ -20,17 +20,17 @@ public class Kosti {
         gamer2 = scanner.nextLine();
         while (resp2.equals("1")) {
             System.out.println("Кидає " + gamer1);
-            resp = scanner.nextLine();
+            scanner.nextLine();
             int kub1 = random.nextInt(6) + 1;
             int kub2 = random.nextInt(6) + 1;
             System.out.println(kub1 + "     " + kub2 + "     " + (kub1 + kub2));
-            System.out.println("");
+            System.out.println();
             System.out.println("Кидає " + gamer2);
-            resp = scanner.nextLine();
+            scanner.nextLine();
             int kub3 = random.nextInt(6) + 1;
             int kub4 = random.nextInt(6) + 1;
             System.out.println(kub3 + "     " + kub4 + "     " + (kub3 + kub4));
-            System.out.println("");
+            System.out.println();
             if (kub1 + kub2 > kub3 + kub4) {
                 System.out.println("Переможець " + gamer1);
             } else if (kub1 + kub2 == kub3 + kub4) {
