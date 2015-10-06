@@ -32,7 +32,6 @@ public class Kosti {
             }
             System.out.println("Якщо хочете зупинитися 2");
             resp2 = Integer.parseInt(scanner.nextLine());
-            //push me
         }
     }
 }
