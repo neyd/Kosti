@@ -12,23 +12,30 @@ public class Kosti {
         Scanner scanner = new Scanner(System.in);
         String resp;
         int resp2 = 0;
+        String gamer1 = null;
+        String gamer2 = null;
+        System.out.println("Введіть ім'я гравця 1");
+        gamer1 = scanner.nextLine();
+        System.out.println("Введіть ім'я гравця 2");
+        gamer2 = scanner.nextLine();
         while (resp2 != 2) {
-            System.out.println("Кидає гравець 1");
+            System.out.println("Кидає " + gamer1);
             resp = scanner.nextLine();
             int kub1 = random.nextInt(6) + 1;
             int kub2 = random.nextInt(6) + 1;
             System.out.println(kub1 + "     " + kub2 + "     " + (kub1 + kub2));
-            System.out.println("Кидає гравець 2");
+            System.out.println("");
+            System.out.println("Кидає " + gamer2);
             resp = scanner.nextLine();
             int kub3 = random.nextInt(6) + 1;
             int kub4 = random.nextInt(6) + 1;
             System.out.println(kub3 + "     " + kub4 + "     " + (kub3 + kub4));
             if (kub1 + kub2 > kub3 + kub4) {
-                System.out.println("Переможець гравець 1");
+                System.out.println("Переможець " + gamer1);
             } else if (kub1 + kub2 == kub3 + kub4) {
                 System.out.println("Нічия");
             } else {
-                System.out.println("Переможець гравець 2");
+                System.out.println("Переможець " + gamer2);
             }
             System.out.println("Якщо хочете зупинитися 2");
             resp2 = Integer.parseInt(scanner.nextLine());
